@@ -1,0 +1,24 @@
+.main-header-text {
+    padding-bottom: 2rem;
+}
+
+div .tomato-color {
+    color: tomato;
+}
+
+.header-text {
+    font-size: 3rem;
+
+}
+
+.header-text .miraj {
+    color: tomato;
+}
+
+p .block {
+    color: rgb(51, 51, 51);
+}
+
+.progress-bar-color {
+    background-color: tomato;
+}
