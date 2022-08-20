@@ -1,3 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f23;
+    color: aliceblue;
+
+}
+
+
+
+.bg-dark-blue {
+    background-color: rgb(14, 15, 22);
+}
+
 .main-header-text {
     padding-bottom: 2rem;
 }
@@ -15,10 +29,12 @@ div .tomato-color {
     color: tomato;
 }
 
-p .block {
-    color: rgb(51, 51, 51);
-}
+
 
 .progress-bar-color {
     background-color: tomato;
+}
+
+.img img {
+    /* max-width: 620px; */
 }

@@ -28,11 +28,11 @@
         <!-- Navbar  -->
         <section>
             <nav>
-                <nav class="navbar navbar-expand-lg bg-dark text-light">
+                <nav class="navbar navbar-expand-lg bg-dark-blue text-light">
 
                     <div class="container">
                         <a class="navbar-brand" href="#">
-                            <img class="img-fluid" src="images/LOGO/web-logo.png" alt="" width="110px">
+                            <img class="img-fluid" src="images/LOGO/web-logo.png" alt="" width="90px">
                         </a>
                         <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -41,18 +41,33 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-end me-5" id="navbarSupportedContent">
                             <ul class="navbar-nav  mb-2 mb-lg-0">
+
                                 <li class="nav-item">
-                                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active text-light fw-semibold" aria-current="page"
+                                        href="#home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">About Me</a>
+                                    <a class="nav-link text-light fw-semibold" href="#skills">Skills</a>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">Contact me</a>
+                                    <a class="nav-link text-light fw-semibold" href="#aboutme">About Me</a>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#">My Work</a>
+                                    <a class="nav-link text-light fw-semibold" href="#contact">Contact me</a>
                                 </li>
+                                <!-- Dark Mode -->
+                                <li class="nav-item">
+                                    <p id="light-mode" class="mt-2 me-2 ms-2" style="display: none;"><i
+                                            class="fa-solid fa-sun text-light"></i>
+                                    </p>
+                                    <p id="night-mode" class="mt-2 me-2 ms-2"><i
+                                            class="fa-solid fa-moon text-light"></i>
+                                    </p>
+                                </li>
+
+
                             </ul>
                         </div>
                     </div>
@@ -63,76 +78,96 @@
 
         <br>
         <!-- Top Head  -->
-        <section class="container ">
+        <section class="container mt-0 mt-lg-5 " id="home">
             <div class="row d-flex d-flex align-items-center ">
-                <div class="col-lg-5 col-10 ms-lg-0 ms-3 ">
-                    <img class="img-fluid" src="images/my-portfolio.png" alt="">
-                </div>
-                <div class="col-lg-7 col-12 main-header-text">
-                    <h1 class="fw-bold header-text text-center text-lg-start ">
+                <div class="col-lg-6 col-12 main-header-text">
+                    <h1 class="fw-bold header-text text-center  text-lg-start ">
                         Welcome To <span class="miraj">Miraj's</span> World
                     </h1>
 
-                    <p class="fw-semibold text-center text-lg-start">
-                        <span class="h3 block">Hi there,</span>
+                    <p class="fw-semibold text-center text-lg-start ">
+                        <span class="">Hi there,</span>
                         My name is Miraj Hossen. I'm a photoghrapher, cinematoghrapher, Graphic Designer and Baby Web
                         Developer. <span class="d-sm-none d-md-none d-none d-lg-block d-xl-block">I'am
                             currently studying at Higher Scondry Cirtificate. Also I am a techy person. Beside From that
-                            I
-                            love to gain new skills. </span> My thought is nowadays a person without a skill is like
-                        without his/her
-                        hands.
+                            I love to gain new skills. My thought is nowadays a person without a skill is like
+                            without his/herhands.</span>
                     </p>
                 </div>
+                <div class="col-lg-6 col-10 ms-lg-0 ms-3 ">
+                    <img class="img-fluid" src="images/my-portfolio.png" alt="">
+                </div>
+
             </div>
         </section>
 
     </header>
     <main>
-        <!-- Achievements  -->
-        <section class="container">
-            <div class="d-flex align-items-center flex-lg-row flex-column-reverse ">
-                <div class="text-center">
-                    <h1 class="fw-bold">
-                        My <span class="tomato-color">Achievements</span>
-                    </h1>
-                    <p class="fw-semibold">
-                        My Biggest Achievements is Nothing. Because I could'nt Find any job. It is fine but I am
-                        learning. In Sha Allah Soon I will get a job.My biggest Dream is Do Hajj with my Parents.
-                    </p>
+        <!-- About Me -->
+        <section class="container mt-5" id="aboutme">
+            <div class="mb-5 pb-5 mt-5 pt-5 d-flex align-items-center flex-lg-row flex-column-reverse ">
+
+                <div class="my-3 img">
+                    <img class="img-fluid max-width:100% " src="images/my-photo2.png" alt="">
                 </div>
-                <div class="my-3">
-                    <img class="img-fluid" src="images/my-photo2.png" alt="">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bold ">
+                        About <span class="tomato-color">Me</span>
+                    </h1>
+                    <p class="fw-semibold px-5 ">
+                        Well My Name is Miraj Hossen. I Live in Bangladesh. I am currently studying at Inter 1st Year.
+                        But I gave main prioraty to learning Code.<span
+                            class="d-sm-none  d-md-none d-none d-lg-block d-xl-block"> My Dream is beacome a
+                            Full-stack Web-Developer. I am
+                            currently working on front-end . After I finish front end I will start learning back-end.
+                        </span>
+                        Coding is Like a addiction to me. I love to code. Every I am learing new thinks and makes me soo
+                        happy.
+                    </p>
                 </div>
             </div>
         </section>
         <!-- skill section  -->
-        <section class="container my-5 p-lg-0 p-4">
-            <div class="row d-flex align-items-center">
+        <section class="container my-5 p-lg-0 p-4 pb-5" id="skills">
+            <div class="row d-flex align-items-center mt-5 pt-5 mb-5 pb-5">
 
-                <div class="col-lg-6 col-12 bg-dark text-light rounded-4 p-3 mb-4">
-                    <div class="mb-1">
-                        <p class="mb-1">Photography</p>
+
+                <div class="col-lg-6 col-12 mb-5">
+                    <h1 class="fw-bold text-center ">My <span class="tomato-color">skills</span></h1>
+                    <P class="fw-semibold text-center ">As I mention I Love to gain new skills. Nowadays I am
+                        learning
+                        Coding.I know HTML, CSS and CSS
+                        FRAMEWORKS . Now I am currently learning Javascript.
+                        I am also a photoghrapher and cinematoghrapher.
+                        I love to learing new thinks. After learing Coding I pretty much learnig something new.I wont
+                        stop. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum voluptate atque
+                        similique magnam odit ducimus quibusdam. Tempora, esse temporibus. Atque, dolorem. Nobis,
+                        sapiente.
+                    </P>
+                </div>
+                <div class="col-lg-6 col-12 bg-dark  rounded-4 p-3 mb-4">
+                    <div class="my-2">
+                        <p class="mb-1 text-light">Photography</p>
                         <div class="progress ">
                             <div class="progress-bar progress-bar-color" role="progressbar" aria-label="Basic example"
                                 style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div class="mb-1">
-                        <p class="mb-1">Cinematography</p>
+                    <div class="my-2">
+                        <p class="mb-1 text-light">Cinematography</p>
                         <div class="progress ">
                             <div class="progress-bar progress-bar-color" role="progressbar" aria-label="Basic example"
                                 style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div class="mb-1">
+                    <div class="my-2 text-light">
                         <p class="mb-1">Graphic Design</p>
                         <div class="progress ">
                             <div class="progress-bar progress-bar-color" role="progressbar" aria-label="Basic example"
                                 style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div class="mb-1">
+                    <div class="my-2 text-light">
                         <p class="mb-1">Web Development</p>
                         <div class="progress ">
                             <div class="progress-bar progress-bar-color" role="progressbar" aria-label="Basic example"
@@ -140,18 +175,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12">
-                    <h1 class="fw-bold text-center">My <span class="tomato-color">skills</span></h1>
-                    <P class="fw-semibold text-center">As I mention I Love to gain new skills. Nowadays I am learning
-                        Coding.I know HTML, CSS and CSS
-                        FRAMEWORKS . Now I am currently learning Javascript.
-                        I am also a photoghrapher and cinematoghrapher.
-                    </P>
-                </div>
             </div>
         </section>
+
+
     </main>
 
+    <footer id="contact">
+        <div class="bg-dark-blue text-light text-center p-5 mt-5">
+            <h1 class="py-3">Contact<span class="tomato-color"> Me</span></h1>
+            <a target="_blank" href="https://www.facebook.com/Iammirajhossen"> <i
+                    class="fa-brands fa-square-facebook text-light fs-4 px-2"></i></a>
+            <a target="_blank" href="https://www.instagram.com/its_miraz_/"><i
+                    class="fa-brands fa-square-instagram text-light fs-4 px-2"></i></a>
+            <a target="_blank" href="https://twitter.com/iammirajhossen"><i
+                    class="fa-brands fa-square-twitter text-light fs-4 px-2"></i></a>
+            <div class="py-3">
+                <small class="text-white-50">All Copyright Reversed from the owener</small>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="js/darkmode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
