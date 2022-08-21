@@ -38,3 +38,21 @@ div .tomato-color {
 .img img {
     /* max-width: 620px; */
 }
+
+.contact-right input,
+textarea {
+    display: block;
+    direction: none;
+    background-color: #1f1f23;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    margin: 0;
+
+}
+
+.contact-right .btn-submit {
+    background-color: rgb(204, 92, 72);
+    color: rgb(255, 255, 255);
+    border: none;
+}

@@ -53,3 +53,8 @@ document.getElementById('light-mode').addEventListener('click', function () {
 
 
 })
+
+
+
+
+// Contact

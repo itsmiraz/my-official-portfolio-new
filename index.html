@@ -128,8 +128,8 @@
             </div>
         </section>
         <!-- skill section  -->
-        <section class="container my-5 p-lg-0 p-4 pb-5" id="skills">
-            <div class="row d-flex align-items-center mt-5 pt-5 mb-5 pb-5">
+        <section class="container px-5" id="skills">
+            <div class="row d-flex align-items-center  mb-5 pb-5">
 
 
                 <div class="col-lg-6 col-12 mb-5">
@@ -139,10 +139,12 @@
                         Coding.I know HTML, CSS and CSS
                         FRAMEWORKS . Now I am currently learning Javascript.
                         I am also a photoghrapher and cinematoghrapher.
-                        I love to learing new thinks. After learing Coding I pretty much learnig something new.I wont
-                        stop. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum voluptate atque
-                        similique magnam odit ducimus quibusdam. Tempora, esse temporibus. Atque, dolorem. Nobis,
-                        sapiente.
+                        I love to learing new thinks. <span <span
+                            class="d-sm-none  d-md-none d-none d-lg-block d-xl-block"> After learing Coding I pretty
+                            much learnig something new.I wont
+                            stop. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum voluptate atque
+                            similique magnam odit ducimus quibusdam. Tempora, esse temporibus. Atque, dolorem. Nobis,
+                            sapiente.</span>
                     </P>
                 </div>
                 <div class="col-lg-6 col-12 bg-dark  rounded-4 p-3 mb-4">
@@ -179,28 +181,62 @@
         </section>
 
 
+        <!-- Contact Me  -->
+        <section class="container  ">
+            <div id="contact" class="row rounded-2 bg-dark-blue text-light ">
+                <div class="contact-left  col col-lg-6 col-12  text-center  mt-5">
+                    <h1 class="py-3">Contact<span class="tomato-color"> Me</span></h1>
+                    <a target="_blank" href="https://www.facebook.com/Iammirajhossen"> <i
+                            class="fa-brands fa-square-facebook text-light fs-4 px-2"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/its_miraz_/"><i
+                            class="fa-brands fa-square-instagram text-light fs-4 px-2"></i></a>
+                    <a target="_blank" href="https://twitter.com/iammirajhossen"><i
+                            class="fa-brands fa-square-twitter text-light fs-4 px-2"></i></a>
+                    <div class="py-3">
+                        <small class="text-white-50">All Copyright Reversed from the owener</small>
+                    </div>
+                </div>
+                <div class=" contact-right  mx-0  col col-lg-6 col-12">
+                    <form name="submit-to-google-sheet">
+                        <input class="my-4 p-2 w-lg-50 w-100 " name="Name" type="text" placeholder="Your Name" required>
+                        <input class="my-4 p-2 w-lg-50 w-100" name="Email" type="text" placeholder="Your Email ID"
+                            required>
+                        <textarea class="my-4 p-2 " name="Message" id="" cols="45" rows="5"
+                            placeholder="Your Message"></textarea>
+
+                        <div class="text-center text-lg-start"><button class="rounded-1 btn-submit">Submit</button>
+                        </div>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                <div>
+                    <p class=" my-5 text-center fs-6 text-white-50">Copyright @ Miraj. Created by Miraj Hossen</p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer id="contact">
-        <div class="bg-dark-blue text-light text-center p-5 mt-5">
-            <h1 class="py-3">Contact<span class="tomato-color"> Me</span></h1>
-            <a target="_blank" href="https://www.facebook.com/Iammirajhossen"> <i
-                    class="fa-brands fa-square-facebook text-light fs-4 px-2"></i></a>
-            <a target="_blank" href="https://www.instagram.com/its_miraz_/"><i
-                    class="fa-brands fa-square-instagram text-light fs-4 px-2"></i></a>
-            <a target="_blank" href="https://twitter.com/iammirajhossen"><i
-                    class="fa-brands fa-square-twitter text-light fs-4 px-2"></i></a>
-            <div class="py-3">
-                <small class="text-white-50">All Copyright Reversed from the owener</small>
-            </div>
-        </div>
-    </footer>
 
 
 
 
 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzmmi1fxS4QVr1eQ886kOcION6rab5ocSYgQwT9cPJlGwoceY0XsWQEUvhY0SSFWmmb/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Thank You For Messaging me.I will reply as soon as Possible';
 
+
+                })
+            form.reset()
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
     <script src="js/darkmode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
