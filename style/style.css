@@ -6,11 +6,48 @@ body {
 
 }
 
+/* Hover Effect */
+.container .text-transiton {
+    transition: 0.2s;
+}
+
+.container .text-transiton:hover {
+    transform: scale(105%);
+}
+
+.container .img-transition img {
+    transition: 0.1s;
+}
+
+.container .img-transition img:hover {
+    transform: scale(103%);
+}
 
 
 .bg-dark-blue {
     background-color: rgb(14, 15, 22);
 }
+
+
+/* About Me */
+.img img {
+    transition: 0.1s;
+}
+
+.img img:hover {
+    transform: scale(103%);
+}
+
+.container .about-me-text {
+    transition: 0.1s;
+}
+
+.container .about-me-text:hover {
+    transform: scale(105%);
+}
+
+
+
 
 .main-header-text {
     padding-bottom: 2rem;
@@ -52,9 +89,18 @@ textarea {
 }
 
 .contact-right .btn-submit {
-    background-color: rgb(204, 92, 72);
+    background-color: rgb(235, 92, 67);
     color: rgb(255, 255, 255);
     border: none;
+    font-weight: 500;
+    border-radius: 3px;
+    transition: 0.2s;
+
+}
+
+.contact-right .btn-submit:hover {
+    background-color: white;
+    color: rgb(235, 92, 67);
 }
 
 form .input-feild {
@@ -62,6 +108,13 @@ form .input-feild {
 }
 
 /* hover effect */
+.contact-left a {
+    color: white;
+    transition: 0.4s;
+
+}
+
 .contact-left a :hover {
-    color: tomato;
+    color: rgb(240, 113, 90);
+    transform: scale(120%);
 }
