@@ -56,3 +56,12 @@ textarea {
     color: rgb(255, 255, 255);
     border: none;
 }
+
+form .input-feild {
+    width: 350px;
+}
+
+/* hover effect */
+.contact-left a :hover {
+    color: tomato;
+}
