@@ -55,6 +55,10 @@
                                 </li>
 
                                 <li class="nav-item">
+                                    <a class="nav-link text-light fw-semibold" href="#projects">Projects</a>
+                                </li>
+
+                                <li class="nav-item">
                                     <a class="nav-link text-light fw-semibold" href="#contact">Contact me</a>
                                 </li>
                                 <!-- Dark Mode -->
@@ -78,7 +82,7 @@
 
         <br>
         <!-- Top Head  -->
-        <section class="container mt-0 mt-lg-5 " id="home">
+        <section class="container mt-0 mt-lg-5 mb-5" id="home">
             <div class="row d-flex d-flex justify-content-center align-items-center ">
                 <div class="col-lg-6 col-12 main-header-text text-transiton">
                     <h1 class="fw-bold header-text text-center  text-lg-start ">
@@ -105,11 +109,11 @@
     </header>
     <main>
         <!-- About Me -->
-        <section class="container mt-5" id="aboutme">
-            <div class="mb-5 pb-5 mt-5 pt-5 d-flex align-items-center flex-lg-row flex-column-reverse ">
+        <section class="container mt-5 pb-lg-3 pb-0 " id="aboutme">
+            <div class="mb-5 pb-lg-5 pb-0 mt-5 pt-5 d-flex align-items-center flex-lg-row flex-column-reverse ">
 
                 <div class="my-3 img">
-                    <img class="img-fluid" src="images/my-photo2.png" alt="">
+                    <img class="img-fluid" src="images/my-photo2.png" alt="" width="900">
                 </div>
                 <div class="text-center mb-5 about-me-text">
                     <h1 class="fw-bold ">
@@ -128,20 +132,78 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- My Projects -->
+        <section id="projects" class="container my-lg-5 my-0 pb-5 pt-3">
+            <h1 class="fw-bold text-center ">
+                My <span class="tomato-color">Recent</span> Projects
+            </h1>
+            <div class="mt-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col card-col">
+                        <div class="card bg-dark">
+                            <img src="images/projects/newslagbe.netlify.app_.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h3 class="card-title  text-light fw-bold"><span class="tomato-color">E</span>-News
+                                    Website</h3>
+                                <p class="card-text text-light">This is my most Recent Project. I use HTMl,CSS and
+                                    Javascript.I
+                                    also Use API in this site. Also this site is responsive</p>
+                                <a target="_blank" href="https://newslagbe.netlify.app/"
+                                    class="shadow-lg btn-submit">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card-col">
+                        <div class="card bg-dark ">
+                            <img src="images/projects/panda-e-commerce-5d73fa.netlify.app_ (1).png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body text-center">
+                                <h3 class="card-title text-light fw-bold">E-<span class="tomato-color">Commerce</span>
+                                    Website</h3>
+                                <p class="card-text text-light ">I make this website while ago . I used HTML, CSS and
+                                    CSS frameWork
+                                    Bootstrap for the first time and it is also responsive for mobile devices </p>
+                                <a target="_blank" href="https://panda-e-commerce-5d73fa.netlify.app/"
+                                    class="shadow-lg btn-submit">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card-col">
+                        <div class="card bg-dark">
+                            <img src="images/projects/unitech-landing-page.netlify.app_.png" class="card-img-top"
+                                alt="...">
+                            <div class="card-body text-center">
+                                <h3 class="card-title  text-light fw-bold">E-learnig
+                                    <span class="tomato-color">Website</span>
+                                </h3>
+                                <p class="card-text text-light">This is an interesting website.It is a landing page
+                                    website for an
+                                    E-learning Instiute. I use HTML and CSS framework Bootstrap.</p>
+                                <a target="_blank" href="https://unitech-landing-page.netlify.app/"
+                                    class="shadow-lg btn-submit">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <!-- skill section  -->
-        <section class="container px-5" id="skills">
+        <section class="container px-5 mt-5 pt-5" id="skills">
             <div class="row d-flex align-items-center  mb-5 pb-5">
 
 
                 <div class="col-lg-6 col-12 mb-5 about-me-text">
                     <h1 class="fw-bold text-center ">My <span class="tomato-color">skills</span></h1>
-                    <P class="fw-semibold text-center ">As I mention I Love to gain new skills. Nowadays I am
+                    <P class="fw-semibold text-center px-4 ">As I mention I Love to gain new skills. Nowadays I am
                         learning
                         Coding.I know HTML, CSS and CSS
                         FRAMEWORKS . Now I am currently learning Javascript.
                         I am also a photoghrapher and cinematoghrapher.
-                        I love to learing new thinks. <span <span
-                            class="d-sm-none  d-md-none d-none d-lg-block d-xl-block"> After learing Coding I pretty
+                        I love to learing new thinks.<span class="d-sm-none  d-md-none d-none d-lg-block d-xl-block">
+                            After learing Coding I pretty
                             much learnig something new.I wont
                             stop. I target is become a Full-stack Web-Developer.</span>
                     </P>
@@ -202,7 +264,7 @@
                 </div>
                 <div class=" contact-right  mx-0  col col-lg-6 col-12 ">
                     <form name="submit-to-google-sheet">
-                        <input class="my-4 p-2 input-feild " name="Name" type="text" placeholder="Your Name" required>
+                        <input class="my-4 p-2  input-feild " name="Name" type="text" placeholder="Your Name" required>
                         <input class="my-4 p-2  input-feild" name="Email" type="text" placeholder="Your Email ID"
                             required>
                         <textarea class="my-4 p-2 input-feild " name="Message" id="" rows="5"
