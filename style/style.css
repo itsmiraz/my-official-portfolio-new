@@ -177,6 +177,22 @@ form .input-feild {
     transition-delay: 400ms;
 }
 
+/* Progrees bar reload */
+.pro-bar:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.pro-bar:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.pro-bar:nth-child(4) {
+    transition-delay: 400ms;
+}
+
+
+
+
 /* Srolbar */
 ::-webkit-scrollbar {
     width: 10px;
