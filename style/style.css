@@ -152,7 +152,30 @@ form .input-feild {
     transform: scale(120%);
 }
 
+/* Scroll animation */
 
+.hiden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.logo:nth-child(2) {
+    margin-left: 10px;
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+    margin-left: 10px;
+    transition-delay: 400ms;
+}
 
 /* Srolbar */
 ::-webkit-scrollbar {
