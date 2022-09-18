@@ -151,3 +151,18 @@ form .input-feild {
     color: rgb(240, 113, 90);
     transform: scale(120%);
 }
+
+
+
+/* Srolbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: tomato;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(18, 18, 41);
+}
